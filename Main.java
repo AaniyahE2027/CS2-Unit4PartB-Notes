@@ -60,6 +60,25 @@ public class Main {
       // REMEMBER that indexes at 0
       //so 1 means we added to the SECOND spot
 
+      // list.get( int index ) return the item
+      // at that specified idex
+      String firstItem = toDo.get(0);
+      //return type matches what the ArrayList holds
+      System.out.println("Do this first: " + firstItem);
+
+      //list.set( int index, obj newItem )
+      // replaces item at that index with a new one!
+      String replacedItem = toDo.set(0,"Get my free crumbl cookie");
+      System.out.println(toDo);
+      System.out.println("We replaced: " + replacedItem);
+
+      // list.remove( int index ) deletes the item at that index
+      // shiifting everything else back one number
+      //also returns the removed  item! (called E on the quick ref.)
+      String removedItem = toDo.remove(2);
+      System.out.println( toDo );
+      System.out.println("We removed the item: " + removedItem);
+
 
    }
 }
